@@ -1,0 +1,342 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MoviesTask" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/background_gray</item>
+        <item name="colorSecondaryVariant">@color/blue_light</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="App.Input.Outline" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/background_gray_small_border</item>
+        <item name="android:padding">@dimen/margin_small</item>
+        <item name="android:minHeight">@dimen/size_button_medium</item>
+        <item name="android:fontFamily">@font/font_bold</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/silver</item>
+    </style>
+
+
+    <style name="App.Button.BorderLess" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="cornerRadius">@dimen/radius_small</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="rippleColor">@color/gray_ripple</item>
+        <item name="android:fontFamily">@font/font_extra_bold</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:minHeight">@dimen/size_button_medium</item>
+    </style>
+
+    <style name="App.Button.Orange" parent="App.Button.BorderLess">
+        <item name="android:fontFamily">@font/font_extra_bold</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/orange</item>
+        <item name="android:layout_height">@dimen/size_button_medium</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="App.Button.White" parent="App.Button.Orange">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Regular">
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+
+    <style name="Regular.Small" parent="Regular">
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="Regular.Small.Black" parent="Regular.Small">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+
+    <style name="Regular.Small.Red" parent="Regular.Small">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+
+    <style name="Regular.Large" parent="Regular">
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="Regular.Large.Black" parent="Regular.Large">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Regular.Large.Silver" parent="Regular.Large">
+        <item name="android:textColor">@color/old_silver</item>
+    </style>
+
+    <style name="Regular.XXXLarge" parent="Regular">
+        <item name="android:textSize">@dimen/text_xxxlarge</item>
+    </style>
+
+    <style name="Regular.XXXLarge.Black" parent="Regular.XXXLarge">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Medium">
+        <item name="android:fontFamily">@font/font_medium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Medium.Small" parent="Medium">
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="Medium.Small.Silver" parent="Medium.Small">
+        <item name="android:textColor">@color/old_silver</item>
+    </style>
+
+    <style name="Medium.Small.Black" parent="Medium.Small">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Medium.Medium" parent="Medium">
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="Medium.Medium.Black" parent="Medium.Medium">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Medium.Medium.Silver" parent="Medium.Medium">
+        <item name="android:textColor">@color/old_silver</item>
+    </style>
+
+    <style name="Medium.Medium.Silver.Filip" parent="Medium.Medium">
+        <item name="android:textColor">@color/filipino_silver</item>
+    </style>
+
+    <style name="Medium.Medium.Orange" parent="Medium.Medium">
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="Medium.Large" parent="Medium">
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="Medium.Large.Orange" parent="Medium.Large">
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="Medium.Large.Black" parent="Medium.Large">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Medium.Large.Silver" parent="Medium.Large">
+        <item name="android:textColor">@color/old_silver</item>
+    </style>
+
+    <style name="Medium.XLarge" parent="Medium">
+        <item name="android:textSize">@dimen/text_xlarge</item>
+    </style>
+
+    <style name="Medium.XLarge.Black" parent="Medium.XLarge">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Medium.XLarge.Silver" parent="Medium.XLarge">
+        <item name="android:textColor">@color/old_silver</item>
+    </style>
+
+    <style name="Medium.XXXLarge" parent="Medium">
+        <item name="android:textSize">@dimen/text_xxxlarge</item>
+    </style>
+
+    <style name="Medium.XXXLarge.Black" parent="Medium.XXXLarge">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Medium.XXXXXXLarge" parent="Medium">
+        <item name="android:textSize">@dimen/text_xxxxxlarge</item>
+    </style>
+
+    <style name="Medium.XXXXXXLarge.Black" parent="Medium.XXXXXXLarge">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Bold">
+        <item name="android:fontFamily">@font/font_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Bold.Small" parent="Bold">
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="Bold.Small.Black" parent="Bold.Small">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Bold.Small.Orange" parent="Bold.Small">
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="Bold.Small.Silver.Filip" parent="Bold.Small">
+        <item name="android:textColor">@color/filipino_silver</item>
+    </style>
+
+    <style name="Bold.Medium" parent="Bold">
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="Bold.Medium.Orange" parent="Bold.Medium">
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="Bold.Medium.Black" parent="Bold.Medium">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Bold.Large" parent="Bold">
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="Bold.Large.Silver" parent="Bold.Large">
+        <item name="android:textColor">@color/old_silver</item>
+    </style>
+
+    <style name="Bold.Large.Silver.Filip" parent="Bold.Large">
+        <item name="android:textColor">@color/filipino_silver</item>
+    </style>
+
+    <style name="Regular.Medium" parent="Regular">
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="Regular.Medium.Black" parent="Regular.Medium">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Bold.Large.Black" parent="Bold.Large">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Bold.Large.Orange" parent="Bold.Large">
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="Bold.XLarge" parent="Bold">
+        <item name="android:textSize">@dimen/text_xlarge</item>
+    </style>
+
+    <style name="Bold.XLarge.Black" parent="Bold.XLarge">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Bold.XXLarge" parent="Bold">
+        <item name="android:textSize">@dimen/text_xxlarge</item>
+    </style>
+
+    <style name="Bold.XXLarge.Black" parent="Bold.XXLarge">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Bold.XXXLarge" parent="Bold">
+        <item name="android:textSize">@dimen/text_xxxlarge</item>
+    </style>
+
+    <style name="Bold.XXXLarge.Black" parent="Bold.XXXLarge">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Bold.XXXXLarge" parent="Bold">
+        <item name="android:textSize">@dimen/text_xxxxlarge</item>
+    </style>
+
+    <style name="Bold.XXXXLarge.Black" parent="Bold.XXXXLarge">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ExtraBold">
+        <item name="android:fontFamily">@font/font_extra_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ExtraBold.Medium" parent="ExtraBold">
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="ExtraBold.Medium.Black" parent="ExtraBold.Medium">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ExtraBold.Large" parent="ExtraBold">
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="ExtraBold.Large.Black" parent="ExtraBold.Large">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ExtraBold.XLarge" parent="ExtraBold">
+        <item name="android:textSize">@dimen/text_xlarge</item>
+    </style>
+
+    <style name="ExtraBold.XLarge.Black" parent="ExtraBold.XLarge">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ExtraBold.XXLarge" parent="ExtraBold">
+        <item name="android:textSize">@dimen/text_xxlarge</item>
+    </style>
+
+    <style name="ExtraBold.XXLarge.Black" parent="ExtraBold.XXLarge">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ExtraBold.XXXXLarge" parent="ExtraBold">
+        <item name="android:textSize">@dimen/text_xxxxlarge</item>
+    </style>
+
+    <style name="ExtraBold.XXXXLarge.Black" parent="ExtraBold.XXXXLarge">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="UltraBold">
+        <item name="android:fontFamily">@font/font_black</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="UltraBold.Medium" parent="UltraBold">
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="UltraBold.Medium.Black" parent="UltraBold.Medium">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="UltraBold.Large" parent="UltraBold">
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="UltraBold.Large.Black" parent="UltraBold.Large">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="UltraBold.XLarge" parent="UltraBold">
+        <item name="android:textSize">@dimen/text_xlarge</item>
+    </style>
+
+    <style name="UltraBold.XLarge.Black" parent="UltraBold.XLarge">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+</resources>

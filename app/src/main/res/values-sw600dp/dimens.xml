@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_category">160dp</dimen>
+    <dimen name="height_slider_home">384dp</dimen>
+    <dimen name="height_image">1024dp</dimen>
+    <dimen name="height_layout_intro">2056dp</dimen>
+    <dimen name="image_height">680dp</dimen>
+
+
+    <dimen name="width_category">160dp</dimen>
+
+    <dimen name="radius_xxxxxlarge">144dp</dimen>
+    <dimen name="radius_xxxxxxxlarge">320dp</dimen>
+
+</resources>

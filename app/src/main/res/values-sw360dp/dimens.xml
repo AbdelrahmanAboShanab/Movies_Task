@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_image">380dp</dimen>
+    <dimen name="height_layout_intro">760dp</dimen>
+    <dimen name="height_category">160dp</dimen>
+
+    <dimen name="image_height">400dp</dimen>
+
+    <dimen name="width_category">160dp</dimen>
+
+</resources>
